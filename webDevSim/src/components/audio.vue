@@ -1,13 +1,24 @@
+<script setup>
+import Resume from '../components/resume.vue'
+</script>
+
 <template>
-    <h3>Play Me</h3>
-    <audio controls autoplay>
-    <source src="../../public/2024WebDevaudio.mp3">
-    </audio>
+    <section class="starter">
+        <img class='check 'src='../../public/GlitchyText.svg' alt="idk">
+        <audio controls>
+        <source src="../../public/2024WebDevaudio.mp3">
+        </audio>
+        <Resume/>
+    </section>
 </template>
+
 <style scoped>
-.um {
-    border: 2px solid green;
-    border-radius: 5px;
-    background-color: rgb(123, 83, 83);
-}
+    .starter {
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: black;
+        height: 500px;
+        width: 900px;
+    }
 </style>
